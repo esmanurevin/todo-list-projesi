@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="dış">
+    <div class="baslık" id="div1">
+        <h2>Yapılacaklar Listesi</h2>
+    </div>
+    <div class="yenigorev">
+        <h4>Yeni Görev</h4>
+        <div class="yenigörev1">
+            <input type="text" placeholder="Yeni görev girin" id="textinput">
+            <button onclick="elemanekle()"><i class="fa-solid fa-plus" style="color: #f3f4f7;"></i></button>
+        </div>
+    </div>
+    <div class="görevlist">
+        <div class="görevlist1">
+            <h4> Görev Listesi</h4>
+            <button onclick="hepsiSil()" id="delete">Temizle</button>
+        </div>
+        <ul id="list">     
+
+        </ul>
+    </div>
+</div>
+    <script src="todolist.js"></script>
+</body>
+
+</html>
